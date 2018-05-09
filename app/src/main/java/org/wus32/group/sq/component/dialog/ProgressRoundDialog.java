@@ -8,52 +8,42 @@ import android.view.WindowManager;
 
 import org.wus32.group.sq.R;
 import org.wus32.group.sq.activity.BaseActivity;
-import org.wus32.group.sq.task.AbstractTask;
-import org.wus32.group.sq.util.CollectionUtil;
 
 /**
- * 
- * @author WangLong
- * @createtime 2014-5-29 上午10:21:23
+ * A round progress dialog.
+ * Used to tell users something are in progress.
+ *
+ * @author Tom
  */
 public class ProgressRoundDialog extends BaseDialog implements OnDismissListener {
 
-	private AbstractTask<?, ?, ?>[] task;
+  public ProgressRoundDialog(BaseActivity activity) {
+    super(activity);
+    setLightweight();
+    setCanceledOnTouchOutside(false);
+    setOnDismissListener(this);
+  }
 
-	public ProgressRoundDialog(BaseActivity activity) {
-		super(activity);
-		setLightweight();
-		setCanceledOnTouchOutside(false);
-		setOnDismissListener(this);
-	}
+  @Override
+  protected void fillContent() {
+    View view = context.makeView(R.layout.fw_layout_componet_dialog_progress_round);
+    contentContainer.addView(view);
+  }
 
-	@Override
-	protected void fillContent() {
-		View view = context.makeView(R.layout.fw_layout_componet_dialog_progress_round);
-		contentContainer.addView(view);
-	}
+  /**
+   * Setting progress dialog style.
+   */
+  private void setLightweight() {
+    setCanceledOnTouchOutside(false);
+    //Background is transparent.
+    setMainColor(0,0,Color.parseColor("#00ffffff"));
+    WindowManager.LayoutParams lp = getWindow().getAttributes();
+    lp.dimAmount = 0f;
+    getWindow().setAttributes(lp);
+  }
 
-	public void registerTask(AbstractTask<?, ?, ?>... task) {
-		this.task = task;
-	}
-
-	private void setLightweight() {
-		setCanceledOnTouchOutside(false);
-		//对话框背景完全透明
-		setMainColor(0, 0, Color.parseColor("#00ffffff"));
-
-		//对话框外面区域完全透明
-		WindowManager.LayoutParams lp = getWindow().getAttributes();
-		lp.dimAmount = 0f;
-		getWindow().setAttributes(lp);
-	}
-
-	@Override
-	public void onDismiss(DialogInterface dialog) {
-		if (!CollectionUtil.isEmpty(task)) {
-			for (AbstractTask<?, ?, ?> t : task) {
-				t.cancel(true);
-			}
-		}
-	}
+  @Override
+  public void onDismiss(DialogInterface dialog) {
+    //No need to do anything.
+  }
 }

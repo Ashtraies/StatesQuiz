@@ -2,43 +2,33 @@
 <RelativeLayout
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	android:id="@+id/activity_learn"
+	android:id="@+id/activity_quiz"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/bg_1"
+	android:background="@android:color/white"
 	tools:context="org.wus32.group.sq.activity.Learn">
 	<TextView
-		android:id="@+id/state_index"
-		android:layout_width="match_parent"
-		android:layout_height="40dp"
-		android:layout_alignParentTop="true"
-		android:background="#00dd00"
-		android:gravity="center"
-		android:textColor="#000"
-		android:textSize="26sp"/>
+		android:id="@+id/quiz_index"
+		style="@style/title_index"/>
+	<ImageView
+		android:layout_width="260dp"
+		android:layout_height="260dp"
+		android:layout_centerInParent="true"
+		android:src="@drawable/title"/>
 	<ViewFlipper
 		android:id="@+id/main_content"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:layout_centerHorizontal="true"
-		android:layout_marginBottom="5dp"
-		android:layout_marginLeft="20dp"
-		android:layout_marginRight="20dp"
-		android:layout_marginTop="45dp">
-		<include layout="@layout/learn_fragment"></include>
+		android:layout_below="@+id/quiz_index"
+		style="@style/flipper">
 	</ViewFlipper>
-	<ImageButton
-		android:id="@+id/left_arrow"
-		android:layout_width="20dp"
-		android:layout_height="160dp"
-		android:layout_alignParentLeft="true"
-		android:layout_centerVertical="true"
-		android:src="@drawable/left_arrow"/>
-	<ImageButton
-		android:id="@+id/right_arrow"
-		android:layout_width="20dp"
-		android:layout_height="160dp"
-		android:layout_alignParentRight="true"
-		android:layout_centerVertical="true"
-		android:src="@drawable/right_arrow"/>
+	<com.google.android.gms.ads.AdView
+		xmlns:ads="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/adView"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"
+		android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		ads:adSize="LARGE_BANNER"
+		ads:adUnitId="@string/unit_id">
+	</com.google.android.gms.ads.AdView>
 </RelativeLayout>

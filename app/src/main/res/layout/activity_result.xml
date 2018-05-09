@@ -9,10 +9,10 @@
 	tools:context="org.wus32.group.sq.activity.Result">
 	<TextView
 		android:id="@+id/result_title"
-		android:background="@android:color/transparent"
+		style="@style/title_index"
 		android:layout_marginTop="30dp"
-		android:textSize="30sp"
-		style="@style/title_index"/>
+		android:background="@android:color/transparent"
+		android:textSize="30sp"/>
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -45,7 +45,8 @@
 			style="@style/result_num"
 			android:layout_marginLeft="5dp"
 			android:layout_marginRight="10dp"
-			android:background="@drawable/redblock"/>
+			android:background="@drawable/redblock"
+			android:onClick="skip"/>
 	</LinearLayout>
 	<LinearLayout
 		android:layout_width="match_parent"

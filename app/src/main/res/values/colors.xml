@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<color name="screen_splash_bg">#d404f434</color>
+	<color name="portal_bg">#d404f434</color>
+
+	<color name="portal_learn">#6db92f</color>
+	<color name="portal_quiz">#109d7b</color>
+	<color name="portal_about">#89bf5d</color>
+	<color name="portal_text_color">#fff</color>
+
+	<color name="title_index_bg">#FF60F143</color>
+	<color name="frag_bg">#141f3e</color>
+
+	<color name="learn_label">#FF91A9EF</color>
+	<color name="learn_name">#FF0846FC</color>
+	<color name="learn_content">#FF3261ED</color>
+
+	<color name="quiz_title">#FFA9B8E6</color>
+
 	<color name="colorPrimary">#3F51B5</color>
 	<color name="colorPrimaryDark">#303F9F</color>
-	<color name="colorAccent">#FF4081</color>
-	<!-- 这是按钮点击颜色 -->
+
 	<color name="fw_dialog_btn">#ebebed</color>
-	<!-- 这是显示的蓝色字体和横条的颜色 -->
+
 	<color name="fw_dialog_main_color">#097dad</color>
 	<color name="dilog_mian_title">#097dad</color>
 	<color name="dilog_mian_divider">#097dad</color>

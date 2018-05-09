@@ -5,37 +5,41 @@
 	android:id="@+id/activity_portal"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:background="@drawable/bg_1"
+	android:background="@color/portal_bg"
 	tools:context="org.wus32.group.sq.activity.Portal">
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
+	<ImageView
+		android:layout_width="330dp"
+		android:layout_height="330dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="-60dp"
+		android:src="@drawable/title"/>
+	<ImageView
+		android:layout_width="260dp"
+		android:layout_height="260dp"
 		android:layout_centerInParent="true"
-		android:text="States Quiz"
-		android:textColor="#fff"
-		android:textSize="40sp"/>
+		android:src="@drawable/flags"/>
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_alignParentBottom="true"
 		android:orientation="vertical">
-		<View
+		<TextView
 			android:id="@+id/portal_learn"
-			android:layout_width="match_parent"
-			android:layout_height="@dimen/portal_btn_height"
-			android:background="#aabbcc"
-			android:onClick="skip"/>
-		<View
+			style="@style/portal_text"
+			android:background="@color/portal_learn"
+			android:text="@string/portal_learn"/>
+		<TextView
 			android:id="@+id/portal_quiz"
-			android:layout_width="match_parent"
-			android:layout_height="@dimen/portal_btn_height"
-			android:background="#ddeeff"
-			android:onClick="skip"/>
-		<View
+			style="@style/portal_text"
+			android:background="@color/portal_quiz"
+			android:text="@string/portal_quiz"/>
+		<!--
+		<TextView
 			android:id="@+id/portal_about"
-			android:layout_width="match_parent"
-			android:layout_height="@dimen/portal_btn_height"
-			android:background="#335577"
-			android:onClick="skip"/>
+			style="@style/portal_text"
+			android:background="@color/portal_about"
+			android:text="@string/portal_about"/>
+		-->
 	</LinearLayout>
 </RelativeLayout>

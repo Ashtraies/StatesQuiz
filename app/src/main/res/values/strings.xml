@@ -1,3 +1,17 @@
 <resources>
-	<string name="app_name">States Quiz</string>
+	<string name="app_name">Country Quiz</string>
+	<string name="portal_learn">Learn</string>
+	<string name="portal_quiz">Quiz</string>
+	<string name="portal_about">About</string>
+	<string name="i2n_title">Please choose the correct state name of</string>
+	<string name="n2i_loc">Please choose the correct state name of</string>
+	<string name="n2i_flage">Please choose the correct state name of</string>
+	<string name="result_restart">Restart</string>
+	<string name="result_learn">Learn</string>
+	<string name="quiz_title_n2f">Please choose the correct flag of</string>
+	<string name="quiz_title_n2l">Please choose the correct location of</string>
+	<string name="result_good">Congratulations!</string>
+	<string name="result_bad">Better luck next time!</string>
+	<string name="unit_id">ca-app-pub-9267819544938806/3154458831</string>
+	<!--<string name="unit_id">ca-app-pub-3940256099942544/5224354917</string>-->
 </resources>

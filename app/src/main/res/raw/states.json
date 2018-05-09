@@ -87,7 +87,7 @@
     "gdp": "$500,111,222",
     "size": "100,230,000"
   },
-	{
+  {
     "id": "8",
     "name": "Arkansas",
     "capital": "Little Rock",
@@ -510,8 +510,8 @@
     "name": "Washington ",
     "capital": "Olympia",
     "abbreviation":"WA",
-    "loc": "washington .png",
-    "flag": "washington .png",
+    "loc": "washington.png",
+    "flag": "washington.png",
     "population": "7.2M",
     "gdp": "$500,111,222",
     "size": "100,230,000"
@@ -522,7 +522,7 @@
     "capital": "Charleston",
     "abbreviation":"WV",
     "loc": "westvirginia.png",
-    "flag": "westvirginia.png",
+    "flag": "westvirgina.png",
     "population": "1.8M",
     "gdp": "$500,111,222",
     "size": "100,230,000"
@@ -559,7 +559,6 @@
     "gdp": "$500,111,222",
     "size": "100,230,000"
   }
-  
 ]
 
 

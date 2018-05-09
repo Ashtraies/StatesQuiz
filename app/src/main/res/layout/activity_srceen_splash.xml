@@ -5,9 +5,18 @@
 	android:id="@+id/activity_srcenn_splash"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	android:background="@color/screen_splash_bg"
 	tools:context="org.wus32.group.sq.activity.SrceenSplash">
 	<ImageView
-		android:layout_width="fill_parent"
-		android:layout_height="match_parent"
-	    android:src="@drawable/bg_1"/>
+		android:layout_width="330dp"
+		android:layout_height="330dp"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="20dp"
+		android:layout_marginTop="-60dp"
+		android:src="@drawable/title"/>
+	<ImageView
+		android:layout_width="260dp"
+		android:layout_height="260dp"
+		android:layout_centerInParent="true"
+		android:src="@drawable/flags"/>
 </RelativeLayout>
