@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_learn"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_1"
+	tools:context="org.wus32.group.sq.activity.Learn">
+	<TextView
+		android:id="@+id/state_index"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_alignParentTop="true"
+		android:background="#00dd00"
+		android:gravity="center"
+		android:textColor="#000"
+		android:textSize="26sp"/>
+	<ViewFlipper
+		android:id="@+id/main_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="45dp">
+		<include layout="@layout/learn_fragment"></include>
+	</ViewFlipper>
+	<ImageButton
+		android:id="@+id/left_arrow"
+		android:layout_width="20dp"
+		android:layout_height="160dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/left_arrow"/>
+	<ImageButton
+		android:id="@+id/right_arrow"
+		android:layout_width="20dp"
+		android:layout_height="160dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/right_arrow"/>
+</RelativeLayout>

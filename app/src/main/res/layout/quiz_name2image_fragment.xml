@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#123">
+	<TextView
+		android:id="@+id/quiz_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="5dp"
+		android:text="Please choose the correct location of:"
+		android:textColor="@color/colorPrimary"
+		android:textSize="22sp"/>
+	<TextView
+		android:id="@+id/state_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/quiz_name"
+		android:text="Conifonia"
+		android:textColor="#f00"
+		android:textSize="22sp"/>
+	<TableLayout
+		android:id="@+id/table"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/state_name"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="10dp">
+		<TableRow>
+			<ImageView
+				android:id="@+id/a"
+				style="@style/table_image"
+			android:src="@drawable/kentucky"/>
+			<ImageView
+				android:id="@+id/b"
+				style="@style/table_image"
+				android:src="@drawable/alabama"/>
+		</TableRow>
+		<TableRow>
+			<ImageView
+				android:id="@+id/c"
+				style="@style/table_image"
+				android:src="@drawable/california"/>
+			<ImageView
+				android:id="@+id/d"
+				style="@style/table_image"
+				android:src="@drawable/michigan"/>
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>

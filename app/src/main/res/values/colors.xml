@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+	<!-- 这是按钮点击颜色 -->
+	<color name="fw_dialog_btn">#ebebed</color>
+	<!-- 这是显示的蓝色字体和横条的颜色 -->
+	<color name="fw_dialog_main_color">#097dad</color>
+	<color name="dilog_mian_title">#097dad</color>
+	<color name="dilog_mian_divider">#097dad</color>
+</resources>

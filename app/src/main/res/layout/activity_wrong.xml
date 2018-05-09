@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/activity_learn"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/darker_gray"
+	tools:context="org.wus32.group.sq.activity.Learn">
+	<TextView
+		android:id="@+id/state_index"
+		style="@style/title_index"/>
+	<ImageView
+		android:layout_width="260dp"
+		android:layout_height="260dp"
+		android:layout_centerInParent="true"
+		android:src="@drawable/flags"/>
+	<ViewFlipper
+		android:id="@+id/main_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/state_index"
+		android:layout_centerHorizontal="true"
+		android:layout_margin="10dp">
+		<include layout="@layout/learn_fragment"></include>
+	</ViewFlipper>
+	<ImageView
+		android:id="@+id/left_arrow"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginLeft="10dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/left_arrow"/>
+	<ImageView
+		android:id="@+id/right_arrow"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_marginRight="10dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:src="@drawable/right_arrow"/>
+</RelativeLayout>
